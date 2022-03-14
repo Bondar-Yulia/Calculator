@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantora+One&family=Questrial&family=Quicksand:wght@400;500;600&display=swap');
+
 html, body {
     padding: 0;
     margin: 0;
     text-align: center;
     background: rgb(235, 210, 255);
+    font-family:'Quicksand', sans-serif;;
 }
 
 .calculator {
+    box-sizing: border-box;
     width: 300px;
-    height: 470px;
+    min-height: 470px;
     border-radius: 20px;
     background: black;
     margin: 50px auto 0 auto;
     padding-top: 2px;
+    padding-bottom: 14px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 45px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -20,13 +25,24 @@ html, body {
     box-shadow: inset 3px 3px 13px 0px rgba(0,0,0,0.68);
     margin: 18px;
     margin-bottom: 24px;
-    height: 80px;
+    min-height: 80px;
     background: rgb(84, 84, 84);
     border-radius: 10px;
     color: white;
-    font-size: 24px;
     padding: 10px;
     text-align: right;
+}
+
+.firstLine {
+    min-height: 30px;
+    font-size: 18px;
+}
+
+.secondLine {
+    padding-top: 3px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 28px;
 }
 
 .buttons {
